@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello coscup</title>
+    <link rel="stylesheet" href="static/css/effeckt/demo/demo.autoprefixed.css">
+    <link rel="stylesheet" href="static/css/effeckt/effeckt.autoprefixed.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <div class="effeckt-modal-wrap md-effect-9" id="effeckt-modal-wrap">
+        <div class="effeckt-modal" id="effeckt-modal">
+           <h3>modal dialog</h3>
+           <div class="effeckt-modal-content">
+               <p>this is a modal window.</p>
+               <button class="effeckt-modal-close">Close me</button>
+           </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>hello coscup</h1>
+        <button class="effeckt-button">
+            <span class="label">click me</span>
+            <span class="spinner"></span>
+        </button>
+    </div>
+
+    <script>
+        $(function(){
+            $('#btn').click(function(){
+                $('.effeckt-modal-wrap').show();
+                $('.effeckt-modal-wrap').addClass('effeckt-show');
+            });
+
+            $('.effeckt-modal-close').click(function(){
+                $('.effeckt-modal-wrap').removeClass('effeckt-show')
+                    .addClass('effeckt-hide');
+            });
+        });
+    </script>
+</body>
+</html>
